@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina web</title>
+    <link rel="stylesheet" href="css/diseño.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+</head>
+<body>
+     <header>
+        <nav>
+            <a href="#">Indice</a>
+            <a href="#">2.1</a>
+            <a href="#">2.2</a>
+            <a href="#">2.3</a>
+            <a href="#">2.4</a>
+        </nav>
+        <section class="contenedor indice">
+            <div class="contenido-indice">
+                <h1 >Indice</h1>
+                <h2 >2.1 Modelo de Comunicación OSI.</h2>
+                <h2 >2.2 Modelo de Comunicación TCP/IP.</h2>
+                <h2 >2.3 Estándares IEEE 802.</h2>
+                <h2 >2.4 Pilas de protocolos y flujo de datos.</h2>
+            </div>    
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" 
+            style="height: 100%; width: 100%;">
+            <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" 
+            style="stroke: none; fill: rgb(19, 19, 19);"></path>
+        </svg></div>
+    </header>
+     <main>
+        <section class="contenedor-osi">
+         <div class="content-osi">
+            <h2 class="titulo1">2.1 Modelo de Comunicación OSI.</h2>
+             <div class="introduccion">
+                 <h2>¿Qué es?</h2>
+                 <p> El modelo de referencia OSI permite que los usuarios vean las funciones de red que se producen en cada capa. Más importante aún, el modelo de referencia OSI es un marco que se puede utilizar para comprender cómo viaja la información a través de una red. Además, puede usar el modelo de referencia OSI para visualizar cómo la información o los paquetes de datos viajan desde los programas de aplicación (por ej., hojas de cálculo, documentos, etc.), a través de un medio de red (por ej., cables, etc.), hasta otro programa de aplicación ubicado en otro computador de la red, aún cuando el transmisor y el receptor tengan distintos tipos de medios de red. En el modelo de referencia OSI, hay siete capas numeradas, cada una de las cuales ilustra una función de red específica.</p>
+             </div>
+             <div class="contenedor-capas">
+                 <div class="content-capa">
+                    <img src="img/capaosi1.png" alt="" class="imagen-osi">
+                     <h3>Capa física - Capa 1</h3>
+                     <p>Es la capa más baja del modelo OSI. Es la que se encarga de la topología de red y de las conexiones globales de la computadora hacia la red, se refiere tanto al medio físico como a la forma en la que se transmite la información y de las redes.</p>
+                 </div>
+                 <div class="content-capa">
+                    <img src="img/capaosi2.png" alt="" class="imagen-osi">
+                    <h3>Capa de enlace de datos - Capa 2</h3>
+                    <p>Esta capa se ocupa del direccionamiento físico, del acceso al medio, de la detección de errores, de la distribución ordenada de tramas y del control del flujo.</p>
+                </div>
+                <div class="content-capa">
+                    <img src="img/capaosi3.png" alt="" class="imagen-osi">
+                    <h3>Capa de red - Capa 3</h3>
+                    <p>Se encarga de identificar el enrutamiento existente entre una o más redes. Las unidades de datos se denominan paquetes, y se pueden clasificar en protocolos enrutables y protocolos de enrutamiento.</p>
+                </div>
+                <div class="content-capa">
+                    <img src="img/capaosi4.png" alt="" class="imagen-osi">
+                    <h3>Capa de transporte - Capa 4</h3>
+                    <p>Capa encargada de efectuar el transporte de los datos de la máquina origen a la de destino, independientemente del tipo de red física que esté utilizando.</p>
+                </div>
+                <div class="content-capa">
+                    <img src="img/capaosi5.png" alt="" class="imagen-osi">
+                    <h3>Capa de sesión - Capa 5</h3>
+                    <p>Esta capa es la que se encarga de mantener y controlar el enlace establecido entre dos computadores que están transmitiendo datos de cualquier índole.</p>
+                </div>
+                <div class="content-capa">
+                    <img src="img/capaosi6.png" alt="" class="imagen-osi">
+                    <h3>Capa de presentación - Capa 6</h3>
+                    <p>El objetivo es encargarse de la representación de la información, de manera que, aunque distintos equipos puedan tener diferentes representaciones internas de caracteres, los datos lleguen de manera reconocible.</p>
+                </div>
+                <div class="content-capa">
+                    <img src="img/capaosi7.png" alt="" class="imagen-osi">
+                    <h3>Capa de aplicación - Capa 7</h3>
+                    <p>Ofrece a las aplicaciones la posibilidad de acceder a los servicios de las demás capas y define los protocolos que utilizan las aplicaciones para intercambiar datos, como correo electrónico, gestores de bases de datos y servidor de ficheros.</p>
+                </div>
+             </div>
+         </div>
+        </section>
+        <section class="contenedor-tcp">
+            <h2 class="titulo">2.2 Modelo de Comunicación TCP/IP.</h2>
+            <div class="introduccion">
+                <h2>¿Qué es?</h2>
+                <p> El modelo TCP/IP es usado para comunicaciones en redes y, como todo protocolo, describe un conjunto de guías generales de operación para permitir que un equipo pueda comunicarse en una red.</p>
+            </div>
+            <div class="content-tcp">
+                <img src="img/protocolo-tcp.png" alt="" class="imagen-tcp">
+                <div class="contenido-texto">
+                    <h3><span>1</span>Capa de aplicación</h3>
+                    <p>La capa de aplicación define las aplicaciones de red y los servicios de Internet estándar que puede utilizar un usuario. Estos servicios utilizan la capa de transporte para enviar y recibir datos. Existen varios protocolos de capa de aplicación.</p>
+                    <h3><span>2</span>Capa de transporte</h3>
+                    <p>La capa de transporte TCP/IP garantiza que los paquetes lleguen en secuencia y sin errores, al intercambiar la confirmación de la recepción de los datos y retransmitir los paquetes perdidos. Este tipo de comunicación se conoce como transmisión de punto a punto.</p>
+                    <h3><span>3</span>Capa de Internet</h3>
+                    <p>La capa de Internet, también conocida como capa de red o capa IP, acepta y transfiere paquetes para la red. Esta capa incluye el potente Protocolo de Internet (IP), el protocolo de resolución de direcciones (ARP) y el protocolo de mensajes de control de Internet (ICMP).</p>
+                    <h3><span>4</span>Capa de vínculo de datos</h3>
+                    <p>La capa de vínculo de datos identifica el tipo de protocolo de red del paquete, en este caso TCP/IP. La capa de vínculo de datos proporciona también control de errores y estructuras.</p>
+                </div>            
+        </section>
+        <section class="contenedor-802">
+            <h2 class="titulo1">2.3 Estándares IEEE 802.</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="contenido-cards">
+                        <h4>IEEE 802</h4>
+                        <p>IEEE 802 es un conjunto de estándares para redes de área local LAN definidos por el Instituto de Ingenieros Eléctricos y Electrónicos IEEE. Este organismo define los estándares de obligado cumplimento, en este caso en el desarrollo de productos de red.</p>
+                    </div>
+                </div> 
+                <div class="card">
+                    <div class="contenido-cards">
+                        <h4>IEEE 802.3</h4>
+                        <p>Este estándar para redes basadas en cable se originó a finales de los años setenta y es mundialmente conocido como el estándar Ethernet. Inicialmente definió redes a velocidad de 10Mbps (Megabits por segundo) sobre cable de tipo coaxial o también de par trenzado. La mayoría de las redes de área local operan bajo este estándar o uno derivado del original Ethernet, actualmente Fast Ethernet (100Mbps) o Gigabit Ethernet (1000Mbps).</p>
+                    </div> 
+                </div> 
+                <div class="card">
+                    <div class="contenido-cards">
+                        <h4>IEEE 802.11</h4>
+                        <p>El estándar original aseguraba la interoperabilidad entre equipos de comunicación dentro de cada una de estas tecnologías inalámbricas, pero no entre las tres tecnologías. Desde entonces, muchos estándares han sido definidos dentro de la especificación IEEE 802.11 que permiten diferentes velocidades de operación. El estándar IEEE 802.11b permite operar hasta 11Mbps y el 802.11a, que opera a una frecuencia mucho mayor (5 GHz), permite hasta 54Mbps. </p>
+                    </div> 
+                </div>            
+        </section>
+        <section class="protocolos">
+            <div class="contenedor">
+                <h2 class="titulo">2.4 Pilas de protocolos y flujo de datos.</h2>
+                <div class="galeria-info">
+                    <div class="card-dev">
+                        <p>Controla el vínculo de datos en alto nivel.</p>
+                        <div class="hover-galeria">
+                            <p>HDLC</p>
+                        </div>
+                    </div>
+                    <div class="card-dev">
+                        <p>Entrama detectando errores, activa lineas, prueba líneas, negocia opciones en capa de red y desactiva líneas.</p>
+                        <div class="hover-galeria">
+                            <p>PPP</p>
+                        </div>
+                    </div>
+                    <div class="card-dev">
+                        <p>Servicio de entrega secuencial en grande volúmenes de datos a aplicaciones destino.</p>
+                        <div class="hover-galeria">
+                            <p>Orientacion de flujo</p>
+                        </div>
+                    </div>
+                    <div class="card-dev">
+                        <p>Verifica la transferencia de los datos se reciban correctamente con conexión entre las máquinas.</p>
+                        <div class="hover-galeria">
+                            <p>Conexion de circuito virtual</p>
+                        </div>
+                    </div>
+                    <div class="card-dev">
+                        <p>Mecanismo utilizado dentro de aplicaciones para permitir la transferencias dentro de una red.</p>
+                        <div class="hover-galeria">
+                            <p>Transferencia de memoria intermedia</p>
+                        </div>
+                    </div>
+                    <div class="card-dev">
+                        <p>Acuerdo del formato antes de iniciar secion en una conexión dentro del servicio de flujo.</p>
+                        <div class="hover-galeria">
+                            <p>Flujo no estructurada</p>
+                        </div>
+                    </div>
+                    <div class="card-dev">
+                        <p> Flujos independientes moviéndose en direcciones diferentes sin relacionarse entre sí. Carga, transporta y descarga reduciendo tráfico en la red.</p>
+                        <div class="hover-galeria">
+                            <p>Conexion full duplex</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+     </main>
+     <footer>
+         <div class="contenedor-footer">
+             <div class="content-foo">
+                 <h4> Unidad 2 Normas y estándares de redes de datos. / Diseño Web Erick Andres Huerta Marañon</h4>
+             </div>
+         </div>
+     </footer>    
+</body>
+</html>
